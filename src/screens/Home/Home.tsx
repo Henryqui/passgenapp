@@ -1,0 +1,27 @@
+import React from "react";
+import { Text, View, StyleSheet} from "react-native";
+
+import styles from "./HomeStyles";
+
+import { StatusBar } from 'expo-status-bar';
+import { CpsLogo } from "../../components/CpsLogo/CpsLogo";
+import { CpsTextInput } from '../../components/CpsTextInput/CpsTextInput';
+
+export default function Home() {
+    return (
+    <View style={styles.appContainer}>
+
+      <View style={styles.logoContainer}>
+      <CpsLogo/>
+      </View>
+
+      <View>
+        <CpsTextInput/>
+      </View>
+      
+        <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+    );
+}
+
